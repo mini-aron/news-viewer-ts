@@ -1,7 +1,8 @@
 import React from "react";
 import * as S from "./style";
+import { NewsItemPropsTypes } from "../../types/components/NewsItem";
 
-function NewsItem({ article }:any) {
+function NewsItem({ article }:NewsItemPropsTypes) {
   const { title, description, url, urlToImage } = article;
   return (
     <S.NewsItemBlock>
