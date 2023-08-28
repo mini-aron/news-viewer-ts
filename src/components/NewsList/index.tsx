@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { articleType } from "../../types/components/articleType";
 import { NewsListPropsTypes } from "../../types/components/NewsList";
 import axios from "axios";
