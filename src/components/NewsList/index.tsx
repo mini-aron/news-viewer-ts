@@ -18,7 +18,6 @@ function NewsList({ category }:NewsListPropsTypes) {
   if (loading) {
     return <S.NewsListBlock>대기 중...</S.NewsListBlock>;
   }
-  // 아직 articles 값이 설정되지 않았을 때
   if (!response) {
     return null;
   }

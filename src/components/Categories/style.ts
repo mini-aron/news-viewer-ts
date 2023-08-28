@@ -1,10 +1,6 @@
 import styled, { css } from "styled-components";
-import { NavLink } from "react-router-dom";
+import { NavLink,NavLinkProps } from "react-router-dom";
 
-type CategoryProps = {
-  activeClassName:string
-  exact:boolean,
-};
 export const CategoriesBlock = styled.div`
   display: flex;
   padding: 1rem;
@@ -16,7 +12,7 @@ export const CategoriesBlock = styled.div`
   }
 `;
 
-export const Category = styled(NavLink)<CategoryProps>`
+export const Category = styled(NavLink)<NavLinkProps>`
   font-size: 1.125rem;
   cursor: pointer;
   white-space: pre;
